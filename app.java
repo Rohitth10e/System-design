@@ -55,7 +55,25 @@ class Drive implements  DriverInterface {
 
 // Dependency Inversion principle
 // HL modules should not depend on ll modules both should depend on abstraction. Abstraction should depend on details. Details should depend on abstractions
+interface RecommendationStrategy {
+    void recommend();
+}
 
+class TredingRecommendations implements RecommendationStrategy {
+    public void recommend() {
+    }
+}
+
+class RecommendationAlgorithm {
+    private RecommendationStrategy recommendationStrategy;
+    public RecommendationAlgorithm(RecommendationStrategy recommendationStrategy) {
+        this.recommendationStrategy = recommendationStrategy;
+    }
+
+    public void recommend() {
+        recommendationStrategy.recommend();
+    }
+}
 
 class app{
   public static void main(String [] args){
