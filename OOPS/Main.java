@@ -79,7 +79,16 @@ class AutomaticCar extends Car{
     }
 }
 
+// static
 
+class BankAccount {
+    private static int accountNumber = 1000;
+
+    public static void generateAccountNumber() {
+        accountNumber++;
+        System.out.println("Generated Account Number: " + accountNumber);
+    }
+}
 
 class Main{
     public static void main(String[] args) {
@@ -91,9 +100,14 @@ class Main{
         // AutomaticCar automaticCar = new AutomaticCar();
         // automaticCar.start();
 
-        NewCar newCar = new NewCar();
-        newCar.start();
-        newCar.numberOfGears();
-        newCar.airBags();
+        // NewCar newCar = new NewCar();
+        // newCar.start();
+        // newCar.numberOfGears();
+        // newCar.airBags();
+
+        BankAccount bankAccount1 = new BankAccount();
+        BankAccount bankAccount2 = new BankAccount();
+        BankAccount.generateAccountNumber(); // Output: Generated Account Number: 1001
+        BankAccount.generateAccountNumber(); // Output: Generated Account Number: 1002
     }
 }
