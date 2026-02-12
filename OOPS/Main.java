@@ -40,6 +40,8 @@ interface NewCarInterface {
   }
 }
 
+
+// a class can implement multiple interfaces but can only extend one class. This is because Java does not support multiple inheritance of classes, but it does support multiple inheritance of interfaces. By implementing multiple interfaces, a class can inherit the abstract methods from all the interfaces and provide implementations for them, allowing for more flexible and modular code design.
 class NewCar implements NewCarInterface {
     public void start() {
         System.out.println("New car is starting...");
@@ -54,6 +56,9 @@ class NewCar implements NewCarInterface {
         System.out.println("Airbags are present: 7");
     }
 }
+
+//can interfaces extend other interfaces ? yes, interfaces can extend other interfaces in Java. This allows for the creation of more specialized interfaces that inherit the abstract methods of the parent interface. When an interface extends another interface, it can add new abstract methods or override existing ones. A class that implements the child interface must provide implementations for all the abstract methods from both the child and parent interfaces.
+
 
 class Manual extends Car {
     public void start(){
