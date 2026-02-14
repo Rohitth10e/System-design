@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Relationships and object behaviour/Relationships and object behaviour.iml" filepath="$PROJECT_DIR$/Relationships and object behaviour/Relationships and object behaviour.iml" />
       <module fileurl="file://$PROJECT_DIR$/System design.iml" filepath="$PROJECT_DIR$/System design.iml" />
     </modules>
   </component>
